@@ -1,15 +1,36 @@
 {
   "name": "@arsams/konami-codes",
+  "description": "A lightweight and versatile TypeScript class for handling Konami codes with customizable callbacks. Easily integrate Konami code functionality into your web applications to unlock hidden features or perform special actions.",
   "version": "0.0.1",
-  "private": true,
-  "main": "src/index.ts",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "konami",
+    "cheat code",
+    "typescript"
+  ],
   "scripts": {
-    "build": "pnpm clean &&tsup",
+    "build": "pnpm clean && tsup",
     "clean": "rimraf dist",
     "dev": "tsup --watch",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arsamsarabi/konami-codes.git"
+  },
+  "homepage": "https://github.com/arsamsarabi/konami-codes#readme",
+  "bugs": "https://github.com/arsamsarabi/konami-codes/issues",
+  "author": {
+    "name": "Arsam Sarabi",
+    "email": "arsamsarabi@me.com",
+    "url": "https://arsam.dev"
+  },
   "devDependencies": {
+    "@changesets/cli": "^2.27.3",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/jest": "^29.5.12",

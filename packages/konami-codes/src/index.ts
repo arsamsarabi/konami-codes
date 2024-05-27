@@ -1,1 +1,2 @@
-console.log("Hello from konami-codes!");
+export * from "./konami";
+export * from "./types";

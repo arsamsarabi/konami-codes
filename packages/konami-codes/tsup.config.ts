@@ -6,7 +6,7 @@ export default defineConfig(({ watch }) => ({
   entry: ["src/index.ts"],
   format: ["cjs", "esm"],
   metafile: true,
-  sourcemap: true,
+  sourcemap: !!watch,
   splitting: false,
   minify: !watch,
 }));
