@@ -5,6 +5,7 @@ export type KCTrigger = {
 
 export type KCOptions = {
   delay?: number;
+  debug?: boolean;
 };
 
 export type TimeoutRef = ReturnType<typeof setTimeout>;
