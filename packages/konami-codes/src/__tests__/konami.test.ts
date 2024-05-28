@@ -1,6 +1,6 @@
-import { Konami } from "../konami";
+import { KonamiCodes } from "../konami";
 
-describe("Konami", () => {
+describe("KonamiCodes", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
@@ -9,7 +9,7 @@ describe("Konami", () => {
     const cb1 = jest.fn();
     const code1 = ["1", "2", "3", "4", "5"];
 
-    const konami = new Konami([{ code: code1, cb: cb1 }], {});
+    const konami = new KonamiCodes([{ code: code1, cb: cb1 }], {});
 
     konami.input("1");
     konami.input("2");
@@ -24,7 +24,7 @@ describe("Konami", () => {
     const cb1 = jest.fn();
     const code1 = ["1", "2", "3", "4", "5"];
 
-    const konami = new Konami([{ code: code1, cb: cb1 }], { delay: 50 });
+    const konami = new KonamiCodes([{ code: code1, cb: cb1 }], { delay: 50 });
 
     konami.input("1");
     konami.input("2");
@@ -41,7 +41,7 @@ describe("Konami", () => {
     const cb2 = jest.fn();
     const code1 = ["1", "2", "3", "4", "5"];
 
-    const konami = new Konami(
+    const konami = new KonamiCodes(
       [
         { code: code1, cb: cb1 },
         { code: code1, cb: cb2 },

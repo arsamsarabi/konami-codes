@@ -1,7 +1,7 @@
 import { DEFAULT_DELAY_DURATION } from "./constants";
 import type { KCOptions, KCTrigger, TimeoutRef } from "./types";
 
-export class Konami {
+export class KonamiCodes {
   private codes: Array<KCTrigger> = [];
   private attempt: string[] = [];
   private timeoutRef: TimeoutRef | undefined = undefined;
