@@ -1,8 +1,7 @@
 {
   "name": "@arsams/konami-codes",
   "description": "A lightweight and versatile TypeScript class for handling Konami codes with customizable callbacks. Easily integrate Konami code functionality into your web applications to unlock hidden features or perform special actions.",
-  "version": "0.0.1",
-  "private": false,
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -11,6 +10,12 @@
     "konami",
     "cheat code",
     "typescript"
+  ],
+  "files": [
+    "dist",
+    "README",
+    "LICENSE",
+    "package.json"
   ],
   "scripts": {
     "build": "pnpm clean && tsup",
