@@ -41,10 +41,13 @@ export class KonamiCodes {
 
   private validate() {
     this.codes.forEach(({ code, cb }) => {
+      if (code.length !== this.attempt.length) return;
+
       if (code.every((val, idx) => val === this.attempt[idx])) {
         this.log("validated", "Attempt");
         cb();
         this.resetDelay();
+        this.resetAttempt();
       }
     });
   }

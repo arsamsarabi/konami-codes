@@ -1,7 +1,7 @@
 {
   "name": "@arsams/konami-codes",
   "description": "A lightweight and versatile TypeScript class for handling Konami codes with customizable callbacks. Easily integrate Konami code functionality into your web applications to unlock hidden features or perform special actions.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

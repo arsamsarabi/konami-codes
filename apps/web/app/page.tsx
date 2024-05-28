@@ -18,6 +18,7 @@ export default function Page(): JSX.Element {
     ],
     {
       delay: 10000,
+      debug: false,
     }
   );
 
