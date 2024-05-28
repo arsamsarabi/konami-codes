@@ -66,6 +66,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@arsams/konami-codes':
+        specifier: workspace:^
+        version: link:../../packages/konami-codes
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
