@@ -24,7 +24,7 @@
     "dev": "tsup --watch",
     "test": "jest",
     "bump": "pnpm build && npx changeset version",
-    "publish": "npx changeset publish"
+    "pub": "npx changeset publish"
   },
   "repository": {
     "type": "git",
