@@ -63,7 +63,7 @@ describe("useKonamiCodes", () => {
     const cb1 = jest.fn();
     const code1 = ["1", "2", "3", "4", "5"];
 
-    const { user } = render(
+    const { user, container } = render(
       <TestComponent
         codes={[{ code: code1, cb: cb1 }]}
         options={{
@@ -73,7 +73,9 @@ describe("useKonamiCodes", () => {
       {}
     );
 
-    await user.focus(".my-selector");
+    const el = container.querySelector(".my-selector") as HTMLElement;
+
+    await user.click(el);
     await user.keyboard("12345");
 
     expect(cb1).toHaveBeenCalledTimes(1);
