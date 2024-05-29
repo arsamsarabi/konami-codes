@@ -44,7 +44,6 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.3",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@testing-library/dom": "^10.1.0",
