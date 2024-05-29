@@ -1,0 +1,63 @@
+{
+  "name": "@arsams/konami-codes-react",
+  "description": "A React library for handling Konami codes with customizable callbacks. Easily integrate Konami code functionality into your React applications to unlock hidden features or perform special actions.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "konami",
+    "cheat code",
+    "typescript",
+    "react",
+    "next"
+  ],
+  "files": [
+    "dist",
+    "README",
+    "LICENSE",
+    "package.json"
+  ],
+  "scripts": {
+    "lint": "tsc",
+    "build": "pnpm clean && tsup",
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "bump": "pnpm build && npx changeset version",
+    "publish": "npx changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arsamsarabi/konami-codes.git"
+  },
+  "homepage": "https://github.com/arsamsarabi/konami-codes#readme",
+  "bugs": "https://github.com/arsamsarabi/konami-codes/issues",
+  "author": {
+    "name": "Arsam Sarabi",
+    "email": "arsamsarabi@me.com",
+    "url": "https://arsam.dev"
+  },
+  "dependencies": {
+    "@arsams/konami-codes": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.3",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@testing-library/dom": "^10.1.0",
+    "@testing-library/react": "^15.0.7",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.2.61",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rimraf": "^5.0.7",
+    "ts-jest": "^29.1.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
