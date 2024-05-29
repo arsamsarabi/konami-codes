@@ -1,14 +1,7 @@
 import { useEffect } from "react";
 import { KonamiCodes } from "@arsams/konami-codes";
-import type { KCTrigger, KCOptions } from "@arsams/konami-codes";
 import { isKeyboardEvent } from "./utils/isKeyboardEvent";
-
-export type UseKonamiCodesArgs = {
-  codes: Array<KCTrigger>;
-  options?: KCOptions & {
-    selector?: string;
-  };
-};
+import { UseKonamiCodesArgs } from "./types";
 
 export const useKonamiCodes = ({ codes, options }: UseKonamiCodesArgs) => {
   const { selector, ...restOptions } = options || {};

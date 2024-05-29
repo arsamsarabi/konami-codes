@@ -1,7 +1,7 @@
 {
   "name": "@arsams/konami-codes-react",
   "description": "A React library for handling Konami codes with customizable callbacks. Easily integrate Konami code functionality into your React applications to unlock hidden features or perform special actions.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
