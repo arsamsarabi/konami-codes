@@ -1,11 +1,11 @@
-export type KCTrigger = {
-  code: string[];
-  cb: Function;
-};
+export type KCSecretCode = {
+	code: string[]
+	cb: Function
+}
 
-export type KCOptions = {
-  delay?: number;
-  debug?: boolean;
-};
+export type KCConfig = {
+	delay?: number
+	debug?: boolean
+}
 
-export type TimeoutRef = ReturnType<typeof setTimeout>;
+export type TimeoutRef = ReturnType<typeof setTimeout>
