@@ -43,14 +43,16 @@ konami.input('ArrowLeft')
 konami.input('ArrowRight')
 // console.log('Callback 1') runs
 
-// Inputting an unexpected string in the sequence resets the attempt and does not run the code
+// Inputting an unexpected string in the sequence resets the
+// attempt and does not run the code
 konami.input('a')
 konami.input('b')
 konami.input('z')
 konami.input('c')
 // console.log('Callback 2') does NOT run
 
-// Waiting longer that the delay value resets the attempt and does not run the code
+// Waiting longer that the delay value resets the attempt
+// and does not run the code
 konami.input('a')
 konami.input('b')
 setTimeout(() => {}, 3500)
